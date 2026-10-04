@@ -8,4 +8,7 @@ await fs.mkdir(path.dirname(output), { recursive: true });
 await fs.writeFile(output, JSON.stringify(observation, null, 2) + "\n");
 console.log(JSON.stringify(observation, null, 2));
 
-if (process.argv.includes("--publish")) publishObservation();
+if (process.argv.includes("--publish")) {
+  const receipt = publishObservation(observation);
+  console.log(JSON.stringify({ delivery: receipt }, null, 2));
+}
