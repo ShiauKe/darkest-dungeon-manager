@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -u
-ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 TMP="$(mktemp -d)"; trap 'rm -rf "$TMP"' EXIT
 STEAM="$HOME/Library/Application Support/Steam"
 REMOTE="$(find "$STEAM/userdata" -type d -path '*/262060/remote' -print -quit 2>/dev/null || true)"
@@ -9,7 +9,7 @@ publish_state(){ local stage="$1" state="$2" detail="$3"; mkdir -p "$ROOT/runtim
 import fs from "node:fs"; const [out,stage,state,detail]=process.argv.slice(2);
 fs.writeFileSync(out,JSON.stringify({schema:"darkest-dungeon.decoder-spike.v1",candidate:{project:"thanhnguyen2187/darkest-savior",ref:"master",mode:"temporary-spike"},observedAt:new Date().toISOString(),stage,state,detail},null,2)+"\n");
 NODE
-node "$ROOT/src/runtime/publish-artifact.js" "$ROOT/runtime/roster-spike.json" "runtime/roster-spike.json" "roster-spike" >/dev/null 2>&1 || true; }
+node "$ROOT/src/runtime/publish-artifact.js" "$ROOT/runtime/roster-spike.json" "runtime/roster-spike.json" "roster-spike" || echo "WARN: staged evidence publish failed"; }
 echo "[1/5] environment"
 if ! command -v go >/dev/null 2>&1; then echo "GO_RUNTIME_MISSING"; publish_state environment BLOCKED "go runtime missing"; exit 20; fi
 if [ ! -f "$ROSTER" ]; then publish_state input BLOCKED "persist.roster.json not found"; exit 22; fi
