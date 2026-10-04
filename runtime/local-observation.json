@@ -1,0 +1,20 @@
+{
+  "schema": "dd1.local-observation.v1",
+  "observedAt": "2026-10-04T11:23:07.809Z",
+  "source": {
+    "host": "Mac.home",
+    "platform": "darwin",
+    "release": "24.6.0",
+    "cwd": "/Users/shiauke/dot/darkest-dungeon-manager"
+  },
+  "capability": "darkest-dungeon-steam-save",
+  "steam": {
+    "status": "save-root-found",
+    "roots": [
+      "/Users/shiauke/Library/Application Support/Steam/userdata",
+      "/Users/shiauke/Library/Application Support/Steam/steamapps/common/DarkestDungeon"
+    ],
+    "roster": [],
+    "decoder": "pending-native-save-decoder"
+  }
+}
