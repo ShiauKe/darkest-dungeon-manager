@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "node src/server.js",
-    "test": "node --test"
+    "test": "node --test",
+    "observe": "node src/runtime/observe.js",
+    "observe:publish": "node src/runtime/observe.js --publish"
   }
 }
