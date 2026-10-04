@@ -4,53 +4,62 @@ import { projectRoster } from "../domain/roster-projection.js";
 const [input, output] = process.argv.slice(2);
 const decoded = JSON.parse(fs.readFileSync(input, "utf8"));
 
-function findHeroes(node, depth = 0) {
-  if (!node || depth > 8) return [];
-  if (Array.isArray(node)) {
-    const heroish = node.filter(x => x && typeof x === "object" && ("heroClass" in x || "hero_class" in x || "resolve_level" in x || "resolveLevel" in x));
-    if (heroish.length) return heroish;
-    for (const child of node) {
-      const found = findHeroes(child, depth + 1);
-      if (found.length) return found;
-    }
-    return [];
-  }
-  if (typeof node === "object") {
+function findHeroes(node, depth = 0, path = "$") {
+  if (!node || depth > 8) return null;
+  if (typeof node === "object" && !Array.isArray(node)) {
     for (const key of ["heroes", "hero_roster", "roster"]) {
       if (key in node) {
         const value = node[key];
         const list = Array.isArray(value) ? value : value && typeof value === "object" ? Object.values(value) : [];
-        if (list.length) return list;
+        if (list.length) return { list, path: path + "." + key };
       }
     }
-    for (const value of Object.values(node)) {
-      const found = findHeroes(value, depth + 1);
-      if (found.length) return found;
+    for (const [key,value] of Object.entries(node)) {
+      const found = findHeroes(value, depth + 1, path + "." + key);
+      if (found) return found;
     }
   }
-  return [];
+  if (Array.isArray(node)) {
+    for (let i=0;i<node.length;i++) {
+      const found=findHeroes(node[i],depth+1,path+"["+i+"]");
+      if(found) return found;
+    }
+  }
+  return null;
 }
 
-const rawHeroes = findHeroes(decoded);
-const heroes = rawHeroes.map(h => ({
-  id: h.id ?? h.roster_id ?? null,
-  name: h.name ?? h.hero_name ?? null,
-  heroClass: h.heroClass ?? h.hero_class ?? h.class ?? null,
-  resolveLevel: h.resolveLevel ?? h.resolve_level ?? h.level ?? 0,
-  stress: h.stress ?? 0,
-  hp: h.hp ?? h.current_hp ?? null,
-  skills: h.skills ?? h.combat_skills ?? [],
-  trinkets: h.trinkets ?? [],
-  quirks: h.quirks ?? [],
-  diseases: h.diseases ?? []
-}));
+function shape(value, depth=0) {
+  if (value === null) return "null";
+  if (Array.isArray(value)) return { type:"array", length:value.length, item: value.length && depth<3 ? shape(value[0],depth+1) : undefined };
+  if (typeof value !== "object") return typeof value;
+  const out={type:"object",keys:{}};
+  if(depth>=3) return out;
+  for(const [k,v] of Object.entries(value).slice(0,80)) out.keys[k]=shape(v,depth+1);
+  return out;
+}
 
-const projection = projectRoster(heroes, { profile: "profile_0" });
-const result = {
-  schema: "darkest-dungeon.decoder-spike.v1",
-  candidate: { project: "robojumper/DarkestDungeonSaveEditor", version: "v0.0.70", mode: "temporary-spike" },
-  decode: { state: "DECODED", heroCount: projection.heroes.length },
-  projection
+const found=findHeroes(decoded);
+const rawHeroes=found?.list ?? [];
+const heroes=rawHeroes.map(h=>({
+  id:h.id??h.roster_id??null,
+  name:h.name??h.hero_name??null,
+  heroClass:h.heroClass??h.hero_class??h.class??null,
+  resolveLevel:h.resolveLevel??h.resolve_level??h.level??0,
+  stress:h.stress??0,
+  hp:h.hp??h.current_hp??null,
+  skills:h.skills??h.combat_skills??[],
+  trinkets:h.trinkets??[],
+  quirks:h.quirks??[],
+  diseases:h.diseases??[]
+}));
+const projection=projectRoster(heroes,{profile:"profile_0"});
+const meaningful=projection.heroes.filter(h=>h.name||h.heroClass||h.id!==null).length;
+const result={
+ schema:"darkest-dungeon.decoder-spike.v2",
+ candidate:{project:"thanhnguyen2187/darkest-savior",ref:"master",mode:"temporary-spike"},
+ decode:{state:"DECODED",heroCount:rawHeroes.length,rosterPath:found?.path??null},
+ mapping:{state: meaningful ? "PARTIAL":"SCHEMA_DISCOVERY_REQUIRED",meaningfulHeroCount:meaningful},
+ schemaProbe:{firstHero:rawHeroes.length?shape(rawHeroes[0]):null},
+ projection
 };
-fs.mkdirSync(new URL("../../runtime/", import.meta.url), { recursive: true });
-fs.writeFileSync(output, JSON.stringify(result, null, 2) + "\n");
+fs.writeFileSync(output,JSON.stringify(result,null,2)+"\n");
