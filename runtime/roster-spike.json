@@ -5,8 +5,8 @@
     "ref": "master",
     "mode": "temporary-spike"
   },
-  "observedAt": "2026-10-04T14:23:29.957Z",
-  "stage": "decode",
-  "state": "DECODED",
-  "detail": "real persist.roster.json converted to JSON"
+  "observedAt": "2026-10-04T14:23:32.625Z",
+  "stage": "projection",
+  "state": "FAILED",
+  "detail": "decoded JSON did not map to current projection"
 }
