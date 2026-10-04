@@ -1,12 +1,406 @@
 {
-  "schema": "darkest-dungeon.decoder-spike.v1",
+  "schema": "darkest-dungeon.decoder-spike.v2",
   "candidate": {
     "project": "thanhnguyen2187/darkest-savior",
     "ref": "master",
     "mode": "temporary-spike"
   },
-  "observedAt": "2026-10-04T12:16:10.428Z",
-  "stage": "decode",
-  "state": "DECODED",
-  "detail": "real persist.roster.json converted to JSON"
+  "decode": {
+    "state": "DECODED",
+    "heroCount": 30,
+    "rosterPath": "$.base_root.heroes"
+  },
+  "mapping": {
+    "state": "SCHEMA_DISCOVERY_REQUIRED",
+    "meaningfulHeroCount": 0
+  },
+  "schemaProbe": {
+    "firstHero": {
+      "type": "object",
+      "keys": {
+        "hero_file_data": {
+          "type": "object",
+          "keys": {
+            "raw_data": {
+              "type": "object",
+              "keys": {
+                "__revision_dont_touch": "number",
+                "base_root": {
+                  "type": "object",
+                  "keys": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "projection": {
+    "schema": "darkest-dungeon.roster.v1",
+    "projectedAt": "2026-10-04T12:16:13.244Z",
+    "profile": "profile_0",
+    "heroes": [
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      },
+      {
+        "id": null,
+        "name": null,
+        "heroClass": null,
+        "resolveLevel": 0,
+        "stress": 0,
+        "hp": null,
+        "skills": [],
+        "trinkets": [],
+        "quirks": [],
+        "diseases": []
+      }
+    ]
+  }
 }
