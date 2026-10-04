@@ -39,7 +39,8 @@ function shape(value, depth=0) {
 }
 
 const found=findHeroes(decoded);
-const rawHeroes=found?.list ?? [];\nconst heroBodies=rawHeroes.map(h=>h?.hero_file_data?.raw_data?.base_root ?? h);
+const rawHeroes=found?.list ?? [];
+const heroBodies=rawHeroes.map(h=>h?.hero_file_data?.raw_data?.base_root ?? h);
 const heroes=heroBodies.map(h=>({
   id:h.id??h.roster_id??null,
   name:h.name??h.hero_name??null,
