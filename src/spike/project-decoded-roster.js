@@ -41,17 +41,18 @@ function shape(value, depth=0) {
 const found=findHeroes(decoded);
 const rawHeroes=found?.list ?? [];
 const heroBodies=rawHeroes.map(h=>h?.hero_file_data?.raw_data?.base_root ?? h);
-const heroes=heroBodies.map(h=>({
-  id:h.id??h.roster_id??null,
-  name:h.name??h.hero_name??null,
+const heroes=heroBodies.map((h,index)=>({
+  id:h.id??h.roster_id??index,
+  name:h.name??h.hero_name??h.actor?.name??null,
   heroClass:h.heroClass??h.hero_class??h.class??null,
   resolveLevel:h.resolveLevel??h.resolve_level??h.level??0,
-  stress:h.stress??0,
-  hp:h.hp??h.current_hp??null,
-  skills:h.skills??h.combat_skills??[],
-  trinkets:h.trinkets??[],
-  quirks:h.quirks??[],
-  diseases:h.diseases??[]
+  resolveXp:h.resolveXp??null,
+  stress:h.stress??h.m_Stress??0,
+  hp:h.hp??h.current_hp??h.actor?.current_hp??null,
+  skills:Object.keys(h.skills?.selected_combat_skills??h.skills??{}),
+  trinkets:Object.keys(h.trinkets?.items??h.trinkets??{}),
+  quirks:Object.keys(h.quirks??{}),
+  diseases:Object.keys(h.quirks??{}).filter(k=>k.startsWith("disease_")||k==="the_red_plague"||k==="creeping_cough")
 }));
 const projection=projectRoster(heroes,{profile:"profile_0"});
 const meaningful=projection.heroes.filter(h=>h.name||h.heroClass||h.id!==null).length;
