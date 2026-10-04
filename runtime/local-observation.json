@@ -1,6 +1,7 @@
 {
   "schema": "dd1.local-observation.v1",
-  "observedAt": "2026-10-04T11:23:07.809Z",
+  "messageId": "711bddf7-6724-4bff-b24b-adafff1df3e6",
+  "observedAt": "2026-10-04T11:26:20.434Z",
   "source": {
     "host": "Mac.home",
     "platform": "darwin",
@@ -9,12 +10,208 @@
   },
   "capability": "darkest-dungeon-steam-save",
   "steam": {
-    "status": "save-root-found",
+    "status": "profile-found",
     "roots": [
       "/Users/shiauke/Library/Application Support/Steam/userdata",
       "/Users/shiauke/Library/Application Support/Steam/steamapps/common/DarkestDungeon"
     ],
+    "profiles": [
+      {
+        "steamUserDir": "1214661268",
+        "remote": "/Users/shiauke/Library/Application Support/Steam/userdata/1214661268/262060/remote",
+        "entries": [
+          {
+            "path": "profile_0",
+            "kind": "directory"
+          },
+          {
+            "path": "profile_0/backup",
+            "kind": "directory"
+          },
+          {
+            "path": "profile_0/backup/novelty_tracker.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/backup/persist.campaign_log.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/backup/persist.campaign_mash.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/backup/persist.curio_tracker.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/backup/persist.estate.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/backup/persist.game.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/backup/persist.game_knowledge.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/backup/persist.journal.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/backup/persist.narration.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/backup/persist.progression.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/backup/persist.quest.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/backup/persist.roster.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/backup/persist.town.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/backup/persist.town_event.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/backup/persist.tutorial.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/backup/persist.upgrades.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/novelty_tracker.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/persist.campaign_log.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/persist.campaign_mash.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/persist.curio_tracker.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/persist.estate.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/persist.game.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/persist.game_knowledge.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/persist.journal.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/persist.loading_screen.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/persist.map.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/persist.narration.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/persist.progression.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/persist.quest.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/persist.raid.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/persist.roster.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/persist.town.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/persist.town_event.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/persist.tutorial.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_0/persist.upgrades.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_9",
+            "kind": "directory"
+          },
+          {
+            "path": "profile_9/novelty_tracker_mp.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_9/persist.banner_custom.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_9/persist.circus_estate.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_9/persist.mp_progression.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_9/persist.prize_booth.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_9/persist.rankings.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_9/persist.roster.network.json",
+            "kind": "file"
+          },
+          {
+            "path": "profile_9/persist.tutorial.json",
+            "kind": "file"
+          },
+          {
+            "path": "steam_init.json",
+            "kind": "file"
+          }
+        ]
+      }
+    ],
     "roster": [],
-    "decoder": "pending-native-save-decoder"
+    "decoder": "profile-discovered-native-decoder-pending"
   }
 }
