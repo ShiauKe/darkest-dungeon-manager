@@ -39,8 +39,8 @@ function shape(value, depth=0) {
 }
 
 const found=findHeroes(decoded);
-const rawHeroes=found?.list ?? [];
-const heroes=rawHeroes.map(h=>({
+const rawHeroes=found?.list ?? [];\nconst heroBodies=rawHeroes.map(h=>h?.hero_file_data?.raw_data?.base_root ?? h);
+const heroes=heroBodies.map(h=>({
   id:h.id??h.roster_id??null,
   name:h.name??h.hero_name??null,
   heroClass:h.heroClass??h.hero_class??h.class??null,
@@ -59,7 +59,7 @@ const result={
  candidate:{project:"thanhnguyen2187/darkest-savior",ref:"master",mode:"temporary-spike"},
  decode:{state:"DECODED",heroCount:rawHeroes.length,rosterPath:found?.path??null},
  mapping:{state: meaningful ? "PARTIAL":"SCHEMA_DISCOVERY_REQUIRED",meaningfulHeroCount:meaningful},
- schemaProbe:{firstHero:rawHeroes.length?shape(rawHeroes[0]):null},
+ schemaProbe:{firstHeroEnvelope:rawHeroes.length?shape(rawHeroes[0]):null,firstHeroBody:heroBodies.length?shape(heroBodies[0]):null},
  projection
 };
 fs.writeFileSync(output,JSON.stringify(result,null,2)+"\n");
