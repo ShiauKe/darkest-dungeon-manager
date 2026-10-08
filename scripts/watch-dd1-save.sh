@@ -16,10 +16,20 @@ mtime() {
   stat -f '%m' "$ROSTER"
 }
 
-last="$(mtime)"
 echo "DD1_WATCHING"
 echo "$ROSTER"
 echo "interval=${INTERVAL}s"
+
+# Self-boot contract: publish current state immediately, then watch for changes.
+echo "DD1_INITIAL_PUBLISH $(date '+%Y-%m-%d %H:%M:%S')"
+if bash "$ROOT/scripts/spike-ddsaveeditor.sh"; then
+  echo "DD1_INITIAL_PUBLISHED"
+else
+  echo "DD1_INITIAL_PUBLISH_FAILED" >&2
+fi
+
+# Capture mtime after the initial publish so changes during startup are not lost.
+last="$(mtime)"
 
 while true; do
   sleep "$INTERVAL"
