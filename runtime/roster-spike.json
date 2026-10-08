@@ -5,8 +5,8 @@
     "ref": "master",
     "mode": "temporary-spike"
   },
-  "observedAt": "2026-10-08T15:45:24.010Z",
-  "stage": "build",
-  "state": "READY",
-  "detail": "temporary binary built"
+  "observedAt": "2026-10-08T15:45:27.781Z",
+  "stage": "decode",
+  "state": "DECODED",
+  "detail": "real persist.roster.json converted to JSON"
 }
