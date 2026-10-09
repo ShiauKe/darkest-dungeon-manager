@@ -7,12 +7,12 @@
   },
   "decode": {
     "state": "DECODED",
-    "heroCount": 28,
+    "heroCount": 30,
     "rosterPath": "$.base_root.heroes"
   },
   "mapping": {
     "state": "PARTIAL",
-    "meaningfulHeroCount": 28
+    "meaningfulHeroCount": 30
   },
   "schemaProbe": {
     "firstHeroEnvelope": {
@@ -224,7 +224,7 @@
   },
   "projection": {
     "schema": "darkest-dungeon.roster.v1",
-    "projectedAt": "2026-10-09T15:40:42.313Z",
+    "projectedAt": "2026-10-09T15:41:04.010Z",
     "profile": "profile_0",
     "difficulty": "stygian",
     "heroes": [
@@ -1066,25 +1066,87 @@
       },
       {
         "id": 27,
-        "name": "康特",
-        "heroClass": "occultist",
-        "resolveLevel": 1,
-        "resolveXp": 4,
-        "weaponRank": 1,
-        "armourRank": 1,
-        "stress": 90,
-        "hp": 20.7,
+        "name": "墨布雷",
+        "heroClass": "bounty_hunter",
+        "resolveLevel": 3,
+        "resolveXp": 21,
+        "weaponRank": 3,
+        "armourRank": 3,
+        "stress": 0,
+        "hp": 40,
         "skills": [
-          "wyrd_reconstruction",
-          "hands_from_abyss",
-          "bloodlet",
-          "abyssal_artillery"
+          "collect_bounty",
+          "come_hither",
+          "uppercut",
+          "flashbang"
         ],
         "trinkets": [],
         "quirks": [
-          "steady",
-          "known_cheat",
-          "stomach_cramp"
+          "slayer_of_unholy",
+          "love_interest",
+          "bad_gambler",
+          "slayer_of_beast",
+          "resilient",
+          "hieromania",
+          "diurnal"
+        ],
+        "diseases": []
+      },
+      {
+        "id": 28,
+        "name": "乌理",
+        "heroClass": "vestal",
+        "resolveLevel": 2,
+        "resolveXp": 13,
+        "weaponRank": 3,
+        "armourRank": 3,
+        "stress": 0,
+        "hp": 39,
+        "skills": [
+          "mace_bash",
+          "dazzling_light",
+          "divine_grace",
+          "gods_hand"
+        ],
+        "trinkets": [],
+        "quirks": [
+          "fated",
+          "unyielding",
+          "nervous",
+          "mercurial",
+          "meditator",
+          "resilient",
+          "winded",
+          "egomania"
+        ],
+        "diseases": []
+      },
+      {
+        "id": 29,
+        "name": "马特尔",
+        "heroClass": "crusader",
+        "resolveLevel": 2,
+        "resolveXp": 13,
+        "weaponRank": 3,
+        "armourRank": 3,
+        "stress": 0,
+        "hp": 54,
+        "skills": [
+          "smite",
+          "zealous_accusation",
+          "holy_lance",
+          "inspiring_cry"
+        ],
+        "trinkets": [],
+        "quirks": [
+          "warren_tactician",
+          "ruins_scrounger",
+          "satanophobia",
+          "anemic",
+          "hard_noggin",
+          "slayer_of_man",
+          "automatonophobia",
+          "nervous"
         ],
         "diseases": []
       }
