@@ -5,8 +5,8 @@
     "ref": "master",
     "mode": "temporary-spike"
   },
-  "observedAt": "2026-10-09T15:46:50.464Z",
-  "stage": "environment",
+  "observedAt": "2026-10-09T15:46:55.998Z",
+  "stage": "build",
   "state": "READY",
-  "detail": "go version go1.27.1 darwin/arm64"
+  "detail": "temporary binary built"
 }
