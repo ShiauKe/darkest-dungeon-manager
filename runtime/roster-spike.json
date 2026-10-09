@@ -198,7 +198,16 @@
           "keys": {
             "items": {
               "type": "object",
-              "keys": {}
+              "keys": {
+                "0": {
+                  "type": "object",
+                  "keys": {}
+                },
+                "1": {
+                  "type": "object",
+                  "keys": {}
+                }
+              }
             }
           }
         },
@@ -224,7 +233,7 @@
   },
   "projection": {
     "schema": "darkest-dungeon.roster.v1",
-    "projectedAt": "2026-10-09T15:41:47.740Z",
+    "projectedAt": "2026-10-09T15:43:20.846Z",
     "profile": "profile_0",
     "difficulty": "stygian",
     "heroes": [
@@ -244,7 +253,10 @@
           "stunning_blow",
           "inspiring_cry"
         ],
-        "trinkets": [],
+        "trinkets": [
+          "0",
+          "1"
+        ],
         "quirks": [
           "fear_of_unholy",
           "armor_haggler",
@@ -491,10 +503,7 @@
           "bloodlet",
           "abyssal_artillery"
         ],
-        "trinkets": [
-          "0",
-          "1"
-        ],
+        "trinkets": [],
         "quirks": [
           "bad_gambler",
           "hard_noggin",
@@ -1020,7 +1029,10 @@
           "festering_vapours",
           "protect_me"
         ],
-        "trinkets": [],
+        "trinkets": [
+          "0",
+          "1"
+        ],
         "quirks": [
           "dacnomania",
           "night_owl",
@@ -1073,14 +1085,17 @@
         "weaponRank": 3,
         "armourRank": 3,
         "stress": 0,
-        "hp": 40,
+        "hp": 36,
         "skills": [
           "collect_bounty",
           "come_hither",
           "uppercut",
           "flashbang"
         ],
-        "trinkets": [],
+        "trinkets": [
+          "0",
+          "1"
+        ],
         "quirks": [
           "slayer_of_unholy",
           "love_interest",
@@ -1108,7 +1123,10 @@
           "divine_grace",
           "gods_hand"
         ],
-        "trinkets": [],
+        "trinkets": [
+          "0",
+          "1"
+        ],
         "quirks": [
           "fated",
           "unyielding",
