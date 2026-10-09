@@ -68,7 +68,12 @@
             "buff_group_next_guid": "number",
             "buff_group": {
               "type": "object",
-              "keys": {}
+              "keys": {
+                "572": {
+                  "type": "object",
+                  "keys": {}
+                }
+              }
             },
             "actor_dot": {
               "type": "object",
@@ -233,7 +238,7 @@
   },
   "projection": {
     "schema": "darkest-dungeon.roster.v1",
-    "projectedAt": "2026-10-09T15:44:06.127Z",
+    "projectedAt": "2026-10-09T15:44:28.234Z",
     "profile": "profile_0",
     "difficulty": "stygian",
     "heroes": [
