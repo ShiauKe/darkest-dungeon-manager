@@ -72,6 +72,14 @@
                 "572": {
                   "type": "object",
                   "keys": {}
+                },
+                "573": {
+                  "type": "object",
+                  "keys": {}
+                },
+                "574": {
+                  "type": "object",
+                  "keys": {}
                 }
               }
             },
@@ -238,7 +246,7 @@
   },
   "projection": {
     "schema": "darkest-dungeon.roster.v1",
-    "projectedAt": "2026-10-09T15:44:28.234Z",
+    "projectedAt": "2026-10-09T15:44:50.391Z",
     "profile": "profile_0",
     "difficulty": "stygian",
     "heroes": [
@@ -251,7 +259,7 @@
         "weaponRank": 0,
         "armourRank": 0,
         "stress": 0,
-        "hp": 33,
+        "hp": 29,
         "skills": [
           "smite",
           "zealous_accusation",
