@@ -5,8 +5,8 @@
     "ref": "master",
     "mode": "temporary-spike"
   },
-  "observedAt": "2026-10-09T15:39:15.891Z",
-  "stage": "decode",
-  "state": "DECODED",
-  "detail": "real persist.roster.json converted to JSON"
+  "observedAt": "2026-10-09T15:40:06.653Z",
+  "stage": "environment",
+  "state": "READY",
+  "detail": "go version go1.27.1 darwin/arm64"
 }
