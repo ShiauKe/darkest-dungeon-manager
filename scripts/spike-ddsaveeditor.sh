@@ -12,7 +12,7 @@ publish_artifact(){
 publish_state(){
   local stage="$1" state="$2" detail="$3"
   mkdir -p "$ROOT/runtime"
-  node - "$ROOT/runtime/roster-spike.json" "$stage" "$state" "$detail" <<'NODE'
+  node - "$ROOT/runtime/roster-spike-status.json" "$stage" "$state" "$detail" <<'NODE'
 import fs from "node:fs";
 const [out,stage,state,detail]=process.argv.slice(2);
 fs.writeFileSync(out,JSON.stringify({
@@ -21,7 +21,7 @@ fs.writeFileSync(out,JSON.stringify({
   observedAt:new Date().toISOString(),stage,state,detail
 },null,2)+"\n");
 NODE
-  publish_artifact "$ROOT/runtime/roster-spike.json" "runtime/roster-spike.json" "roster-spike"
+  publish_artifact "$ROOT/runtime/roster-spike-status.json" "runtime/roster-spike-status.json" "roster-spike"
 }
 
 echo "[1/5] environment"
