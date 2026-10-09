@@ -233,7 +233,7 @@
   },
   "projection": {
     "schema": "darkest-dungeon.roster.v1",
-    "projectedAt": "2026-10-09T15:48:30.278Z",
+    "projectedAt": "2026-10-09T15:48:52.187Z",
     "profile": "profile_0",
     "difficulty": "stygian",
     "heroes": [
@@ -1021,8 +1021,8 @@
         "resolveXp": 25,
         "weaponRank": 3,
         "armourRank": 3,
-        "stress": 8,
-        "hp": 26,
+        "stress": 22,
+        "hp": 25,
         "skills": [
           "fortifying_vapours",
           "invigorating_vapours",
@@ -1115,8 +1115,8 @@
         "resolveXp": 13,
         "weaponRank": 3,
         "armourRank": 3,
-        "stress": 19,
-        "hp": 39,
+        "stress": 36,
+        "hp": 38,
         "skills": [
           "mace_bash",
           "dazzling_light",
