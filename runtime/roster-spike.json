@@ -238,7 +238,7 @@
   },
   "projection": {
     "schema": "darkest-dungeon.roster.v1",
-    "projectedAt": "2026-10-09T15:49:59.211Z",
+    "projectedAt": "2026-10-09T15:50:22.456Z",
     "profile": "profile_0",
     "difficulty": "stygian",
     "heroes": [
@@ -1027,7 +1027,7 @@
         "weaponRank": 3,
         "armourRank": 3,
         "stress": 22,
-        "hp": 25,
+        "hp": 20,
         "skills": [
           "fortifying_vapours",
           "invigorating_vapours",
