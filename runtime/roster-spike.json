@@ -233,7 +233,7 @@
   },
   "projection": {
     "schema": "darkest-dungeon.roster.v1",
-    "projectedAt": "2026-10-09T15:48:52.187Z",
+    "projectedAt": "2026-10-09T15:49:14.157Z",
     "profile": "profile_0",
     "difficulty": "stygian",
     "heroes": [
@@ -1116,7 +1116,7 @@
         "weaponRank": 3,
         "armourRank": 3,
         "stress": 36,
-        "hp": 38,
+        "hp": 34,
         "skills": [
           "mace_bash",
           "dazzling_light",
