@@ -224,7 +224,7 @@
   },
   "projection": {
     "schema": "darkest-dungeon.roster.v1",
-    "projectedAt": "2026-10-09T15:37:55.710Z",
+    "projectedAt": "2026-10-09T15:38:50.009Z",
     "profile": "profile_0",
     "difficulty": "stygian",
     "heroes": [
@@ -769,9 +769,9 @@
         "hp": 35.15,
         "skills": [
           "crush",
-          "defender",
           "retribution",
-          "bolster"
+          "bolster",
+          "bellow"
         ],
         "trinkets": [],
         "quirks": [
