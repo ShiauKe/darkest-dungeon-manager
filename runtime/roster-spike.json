@@ -68,12 +68,7 @@
             "buff_group_next_guid": "number",
             "buff_group": {
               "type": "object",
-              "keys": {
-                "575": {
-                  "type": "object",
-                  "keys": {}
-                }
-              }
+              "keys": {}
             },
             "actor_dot": {
               "type": "object",
@@ -238,7 +233,7 @@
   },
   "projection": {
     "schema": "darkest-dungeon.roster.v1",
-    "projectedAt": "2026-10-09T15:47:46.421Z",
+    "projectedAt": "2026-10-09T15:48:08.209Z",
     "profile": "profile_0",
     "difficulty": "stygian",
     "heroes": [
@@ -251,7 +246,7 @@
         "weaponRank": 0,
         "armourRank": 0,
         "stress": 0,
-        "hp": 29,
+        "hp": 31,
         "skills": [
           "smite",
           "zealous_accusation",
@@ -1089,7 +1084,7 @@
         "resolveXp": 21,
         "weaponRank": 3,
         "armourRank": 3,
-        "stress": 0,
+        "stress": 2,
         "hp": 36,
         "skills": [
           "collect_bounty",
@@ -1121,7 +1116,7 @@
         "weaponRank": 3,
         "armourRank": 3,
         "stress": 19,
-        "hp": 38,
+        "hp": 39,
         "skills": [
           "mace_bash",
           "dazzling_light",
