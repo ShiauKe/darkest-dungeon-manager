@@ -7,12 +7,12 @@
   },
   "decode": {
     "state": "DECODED",
-    "heroCount": 30,
+    "heroCount": 31,
     "rosterPath": "$.base_root.heroes"
   },
   "mapping": {
     "state": "PARTIAL",
-    "meaningfulHeroCount": 30
+    "meaningfulHeroCount": 31
   },
   "schemaProbe": {
     "firstHeroEnvelope": {
@@ -108,31 +108,7 @@
                 "evolution_duration_remaining": "number"
               }
             },
-            "armor_haggler": {
-              "type": "object",
-              "keys": {
-                "is_new": "boolean",
-                "is_locked": "boolean",
-                "trinketId": "number",
-                "mission_count": "number",
-                "replaces_quirk": "number",
-                "replaces_quirk_viewed": "boolean",
-                "evolution_duration_remaining": "number"
-              }
-            },
             "fast_healer": {
-              "type": "object",
-              "keys": {
-                "is_new": "boolean",
-                "is_locked": "boolean",
-                "trinketId": "number",
-                "mission_count": "number",
-                "replaces_quirk": "number",
-                "replaces_quirk_viewed": "boolean",
-                "evolution_duration_remaining": "number"
-              }
-            },
-            "ruins_adventurer": {
               "type": "object",
               "keys": {
                 "is_new": "boolean",
@@ -157,6 +133,42 @@
               }
             },
             "weald_tactician": {
+              "type": "object",
+              "keys": {
+                "is_new": "boolean",
+                "is_locked": "boolean",
+                "trinketId": "number",
+                "mission_count": "number",
+                "replaces_quirk": "number",
+                "replaces_quirk_viewed": "boolean",
+                "evolution_duration_remaining": "number"
+              }
+            },
+            "irrepressible": {
+              "type": "object",
+              "keys": {
+                "is_new": "boolean",
+                "is_locked": "boolean",
+                "trinketId": "number",
+                "mission_count": "number",
+                "replaces_quirk": "number",
+                "replaces_quirk_viewed": "boolean",
+                "evolution_duration_remaining": "number"
+              }
+            },
+            "weald_adventurer": {
+              "type": "object",
+              "keys": {
+                "is_new": "boolean",
+                "is_locked": "boolean",
+                "trinketId": "number",
+                "mission_count": "number",
+                "replaces_quirk": "number",
+                "replaces_quirk_viewed": "boolean",
+                "evolution_duration_remaining": "number"
+              }
+            },
+            "bulimic": {
               "type": "object",
               "keys": {
                 "is_new": "boolean",
@@ -198,16 +210,7 @@
           "keys": {
             "items": {
               "type": "object",
-              "keys": {
-                "0": {
-                  "type": "object",
-                  "keys": {}
-                },
-                "1": {
-                  "type": "object",
-                  "keys": {}
-                }
-              }
+              "keys": {}
             }
           }
         },
@@ -233,7 +236,7 @@
   },
   "projection": {
     "schema": "darkest-dungeon.roster.v1",
-    "projectedAt": "2026-10-09T15:51:28.483Z",
+    "projectedAt": "2026-10-13T14:35:04.575Z",
     "profile": "profile_0",
     "difficulty": "stygian",
     "heroes": [
@@ -242,28 +245,26 @@
         "name": "Reynauld",
         "heroClass": "crusader",
         "resolveLevel": 4,
-        "resolveXp": 26,
+        "resolveXp": 33,
         "weaponRank": 0,
         "armourRank": 0,
-        "stress": 2,
-        "hp": 31,
+        "stress": 7,
+        "hp": 33,
         "skills": [
           "smite",
           "zealous_accusation",
           "stunning_blow",
           "inspiring_cry"
         ],
-        "trinkets": [
-          "0",
-          "1"
-        ],
+        "trinkets": [],
         "quirks": [
           "fear_of_unholy",
-          "armor_haggler",
           "fast_healer",
-          "ruins_adventurer",
           "warrior_of_light",
-          "weald_tactician"
+          "weald_tactician",
+          "irrepressible",
+          "weald_adventurer",
+          "bulimic"
         ],
         "diseases": []
       },
@@ -274,30 +275,27 @@
         "resolveLevel": 5,
         "resolveXp": 40,
         "weaponRank": 4,
-        "armourRank": 3,
-        "stress": 50,
-        "hp": 38,
+        "armourRank": 4,
+        "stress": 0,
+        "hp": 43,
         "skills": [
-          "take_aim",
-          "point_blank_shot",
           "duelist_advance",
-          "pistol_shot"
+          "pistol_shot",
+          "wicked_slice",
+          "opened_vein"
         ],
-        "trinkets": [
-          "0",
-          "1"
-        ],
+        "trinkets": [],
         "quirks": [
           "accurate",
           "fated",
+          "plutomania",
+          "torn_rotator_cuff",
           "unquiet_mind",
           "cove_scrounger",
           "hieromania",
-          "torn_rotator_cuff",
-          "weald_explorer",
-          "plutomania",
+          "robust",
           "warren_adventurer",
-          "witness"
+          "known_cheat"
         ],
         "diseases": []
       },
@@ -307,15 +305,15 @@
         "heroClass": "vestal",
         "resolveLevel": 5,
         "resolveXp": 40,
-        "weaponRank": 3,
-        "armourRank": 3,
-        "stress": 0,
-        "hp": 1,
+        "weaponRank": 4,
+        "armourRank": 4,
+        "stress": 23,
+        "hp": 44,
         "skills": [
           "gods_comfort",
-          "gods_illumination",
           "divine_grace",
-          "judgement"
+          "judgement",
+          "dazzling_light"
         ],
         "trinkets": [],
         "quirks": [
@@ -325,10 +323,10 @@
           "night_blindness",
           "quick_reflexes",
           "sensitive_to_light",
-          "enlightened",
-          "fast_healer",
-          "meditator",
-          "mercurial"
+          "the_yips",
+          "precision_striker",
+          "dipsomania",
+          "ruins_explorer"
         ],
         "diseases": []
       },
@@ -338,8 +336,8 @@
         "heroClass": "bounty_hunter",
         "resolveLevel": 4,
         "resolveXp": 34,
-        "weaponRank": 3,
-        "armourRank": 1,
+        "weaponRank": 4,
+        "armourRank": 4,
         "stress": 0,
         "hp": 30,
         "skills": [
@@ -369,16 +367,16 @@
         "name": "w1",
         "heroClass": "jester",
         "resolveLevel": 4,
-        "resolveXp": 30,
+        "resolveXp": 32,
         "weaponRank": 2,
         "armourRank": 2,
-        "stress": 0,
+        "stress": 2,
         "hp": 27,
         "skills": [
           "battle_ballad",
-          "inspiring_tune",
           "dirk_stab",
-          "harvest"
+          "harvest",
+          "inspiring_tune"
         ],
         "trinkets": [],
         "quirks": [
@@ -388,10 +386,10 @@
           "guilty_conscience",
           "hard_noggin",
           "meditator",
-          "stout",
           "unquiet_mind",
           "warren_explorer",
-          "warren_phobe"
+          "sickly",
+          "warrior_of_light"
         ],
         "diseases": []
       },
@@ -403,7 +401,7 @@
         "resolveXp": 40,
         "weaponRank": 4,
         "armourRank": 4,
-        "stress": 63,
+        "stress": 0,
         "hp": 36,
         "skills": [
           "lunge",
@@ -411,21 +409,18 @@
           "thrown_dagger",
           "pick"
         ],
-        "trinkets": [
-          "0",
-          "1"
-        ],
+        "trinkets": [],
         "quirks": [
+          "corvids_eye",
           "dipsomania",
           "natural_swing",
           "ruminator",
           "unerring",
           "winded",
           "cove_adventurer",
-          "ruins_explorer",
-          "sensitive_to_light",
           "night_blindness",
-          "corvids_eye"
+          "ruins_explorer",
+          "sensitive_to_light"
         ],
         "diseases": []
       },
@@ -465,7 +460,7 @@
         "resolveXp": 40,
         "weaponRank": 4,
         "armourRank": 4,
-        "stress": 0,
+        "stress": 19,
         "hp": 29,
         "skills": [
           "festering_vapours",
@@ -483,7 +478,8 @@
           "eagle_eye",
           "hatred_of_eldritch",
           "lygophobia",
-          "photomania"
+          "photomania",
+          "nervous"
         ],
         "diseases": []
       },
@@ -495,12 +491,12 @@
         "resolveXp": 40,
         "weaponRank": 4,
         "armourRank": 4,
-        "stress": 18,
+        "stress": 0,
         "hp": 35,
         "skills": [
           "wyrd_reconstruction",
-          "disruptive_curse",
           "bloodlet",
+          "weakening_curse",
           "abyssal_artillery"
         ],
         "trinkets": [],
@@ -509,13 +505,11 @@
           "hard_noggin",
           "lygophobia",
           "witness",
+          "dark_temptation",
+          "quick_reflexes",
           "robust",
-          "suicidal",
           "warren_scrounger",
-          "weald_adventurer",
-          "hemophilia",
-          "flagellant",
-          "quick_reflexes"
+          "weald_adventurer"
         ],
         "diseases": []
       },
@@ -555,7 +549,7 @@
         "resolveLevel": 5,
         "resolveXp": 40,
         "weaponRank": 4,
-        "armourRank": 3,
+        "armourRank": 4,
         "stress": 0,
         "hp": 56,
         "skills": [
@@ -583,17 +577,17 @@
         "id": 11,
         "name": "曼莱利",
         "heroClass": "occultist",
-        "resolveLevel": 4,
-        "resolveXp": 29,
-        "weaponRank": 1,
-        "armourRank": 1,
+        "resolveLevel": 5,
+        "resolveXp": 37,
+        "weaponRank": 4,
+        "armourRank": 4,
         "stress": 0,
-        "hp": 1,
+        "hp": 23,
         "skills": [
-          "weakening_curse",
           "abyssal_artillery",
           "wyrd_reconstruction",
-          "daemons_pull"
+          "weakening_curse",
+          "bloodlet"
         ],
         "trinkets": [],
         "quirks": [
@@ -603,9 +597,9 @@
           "early_riser",
           "hatred_of_unholy",
           "mercurial",
-          "quickdraw",
           "slayer_of_unholy",
-          "warren_tactician"
+          "warren_tactician",
+          "slugger"
         ],
         "diseases": []
       },
@@ -651,13 +645,13 @@
         "resolveXp": 40,
         "weaponRank": 4,
         "armourRank": 4,
-        "stress": 0,
-        "hp": 1,
+        "stress": 27,
+        "hp": 55,
         "skills": [
           "defender",
           "bolster",
-          "retribution",
-          "crush"
+          "crush",
+          "retribution"
         ],
         "trinkets": [],
         "quirks": [
@@ -667,7 +661,9 @@
           "eagle_eye",
           "hatred_of_beast",
           "inaccurate",
-          "ruins_explorer"
+          "ruins_explorer",
+          "winded",
+          "calm"
         ],
         "diseases": []
       },
@@ -677,27 +673,27 @@
         "heroClass": "bounty_hunter",
         "resolveLevel": 5,
         "resolveXp": 40,
-        "weaponRank": 3,
-        "armourRank": 2,
-        "stress": 55,
-        "hp": 31.5,
+        "weaponRank": 4,
+        "armourRank": 4,
+        "stress": 0,
+        "hp": 36,
         "skills": [
           "collect_bounty",
-          "come_hither",
-          "uppercut",
-          "target_tag"
+          "finish_him",
+          "hook_and_slice",
+          "flashbang"
         ],
         "trinkets": [],
         "quirks": [
           "plutomania",
+          "quick_reflexes",
           "unquiet_mind",
           "witness",
-          "calm",
-          "dacnomania",
-          "evasive",
-          "hard_skinned",
-          "quick_reflexes",
-          "robust",
+          "bad_humours",
+          "corvids_resilience",
+          "cove_explorer",
+          "flagellant",
+          "photomania",
           "ruins_adventurer"
         ],
         "diseases": []
@@ -706,8 +702,8 @@
         "id": 15,
         "name": "安斯特尼",
         "heroClass": "plague_doctor",
-        "resolveLevel": 3,
-        "resolveXp": 17,
+        "resolveLevel": 4,
+        "resolveXp": 25,
         "weaponRank": 2,
         "armourRank": 2,
         "stress": 0,
@@ -720,49 +716,50 @@
         ],
         "trinkets": [],
         "quirks": [
-          "clotter",
           "fear_of_unholy",
-          "irrepressible",
+          "clotter",
+          "guilty_conscience",
           "meditator",
-          "quickdraw",
+          "natural_eye",
+          "ruins_tactician",
           "shocker",
           "suicidal",
-          "ruins_tactician",
-          "unquiet_mind"
+          "unquiet_mind",
+          "second_wind",
+          "creeping_cough"
         ],
-        "diseases": []
+        "diseases": [
+          "creeping_cough"
+        ]
       },
       {
         "id": 16,
         "name": "穆萨德",
         "heroClass": "hellion",
         "resolveLevel": 5,
-        "resolveXp": 39,
+        "resolveXp": 40,
         "weaponRank": 4,
         "armourRank": 4,
-        "stress": 16,
+        "stress": 0,
         "hp": 46,
         "skills": [
           "iron_swan",
-          "bleed_out",
           "adrenaline_rush",
-          "wicked_hack"
+          "wicked_hack",
+          "breakthru"
         ],
-        "trinkets": [
-          "0",
-          "1"
-        ],
+        "trinkets": [],
         "quirks": [
           "demonomania",
           "fear_of_unholy",
           "phengophobia",
-          "cove_phobe",
-          "lygophobia",
           "unyielding",
           "warren_adventurer",
           "warrior_of_light",
           "weald_adventurer",
-          "corvids_eye"
+          "flawed_release",
+          "last_gasp",
+          "calm"
         ],
         "diseases": []
       },
@@ -770,17 +767,17 @@
         "id": 17,
         "name": "珀西",
         "heroClass": "man_at_arms",
-        "resolveLevel": 3,
-        "resolveXp": 22,
+        "resolveLevel": 5,
+        "resolveXp": 40,
         "weaponRank": 1,
         "armourRank": 1,
-        "stress": 32,
-        "hp": 35.15,
+        "stress": 0,
+        "hp": 31.45,
         "skills": [
           "crush",
           "retribution",
           "bolster",
-          "bellow"
+          "defender"
         ],
         "trinkets": [],
         "quirks": [
@@ -788,12 +785,12 @@
           "dipsomania",
           "soft",
           "cove_tactician",
+          "egomania",
+          "irrepressible",
+          "meditator",
           "quickdraw",
-          "ruins_tactician",
           "skilled_gambler",
-          "thin_blooded",
-          "weald_explorer",
-          "fear_of_eldritch"
+          "weald_phobe"
         ],
         "diseases": []
       },
@@ -802,16 +799,16 @@
         "name": "帕米拉",
         "heroClass": "houndmaster",
         "resolveLevel": 3,
-        "resolveXp": 16,
+        "resolveXp": 21,
         "weaponRank": 1,
         "armourRank": 1,
         "stress": 0,
-        "hp": 1,
+        "hp": 25,
         "skills": [
-          "howl",
           "guard_dog",
           "lick_wounds",
-          "hounds_harry"
+          "hounds_rush",
+          "blackjack"
         ],
         "trinkets": [],
         "quirks": [
@@ -833,8 +830,8 @@
         "heroClass": "plague_doctor",
         "resolveLevel": 5,
         "resolveXp": 40,
-        "weaponRank": 3,
-        "armourRank": 3,
+        "weaponRank": 4,
+        "armourRank": 4,
         "stress": 0,
         "hp": 1,
         "skills": [
@@ -863,31 +860,29 @@
         "id": 20,
         "name": "慕斯特尔",
         "heroClass": "houndmaster",
-        "resolveLevel": 3,
-        "resolveXp": 21,
+        "resolveLevel": 4,
+        "resolveXp": 29,
         "weaponRank": 3,
         "armourRank": 3,
-        "stress": 0,
+        "stress": 28,
         "hp": 33,
         "skills": [
           "lick_wounds",
           "guard_dog",
           "hounds_rush",
-          "whistle"
+          "hounds_harry"
         ],
         "trinkets": [],
         "quirks": [
+          "hagiomania",
+          "necromania",
           "bloodthirsty",
           "cove_phobe",
-          "necromania",
           "quick_reflexes",
-          "rabies",
           "skilled_gambler",
           "thick_blooded",
           "warren_adventurer",
-          "wasting_sickness",
-          "zoophobia",
-          "hagiomania"
+          "calm"
         ],
         "diseases": []
       },
@@ -895,196 +890,135 @@
         "id": 21,
         "name": "尼斯丁",
         "heroClass": "arbalest",
-        "resolveLevel": 4,
-        "resolveXp": 29,
-        "weaponRank": 1,
-        "armourRank": 1,
+        "resolveLevel": 5,
+        "resolveXp": 40,
+        "weaponRank": 4,
+        "armourRank": 4,
         "stress": 0,
-        "hp": 32,
+        "hp": 37.6,
         "skills": [
           "sniper_shot",
-          "flare",
           "battlefield_bandage",
-          "suppressing_fire"
+          "suppressing_fire",
+          "bola"
         ],
         "trinkets": [],
         "quirks": [
-          "necromania",
           "satanophobia",
+          "bulimic",
+          "fast_healer",
           "hatred_of_man",
           "last_gasp",
-          "scattering",
+          "ruins_explorer",
           "wasting_sickness",
-          "weald_adventurer",
-          "weald_explorer",
-          "thin_blooded",
-          "weald_tactician"
+          "weald_adventurer"
         ],
         "diseases": []
       },
       {
         "id": 22,
-        "name": "阿德尼",
-        "heroClass": "abomination",
-        "resolveLevel": 2,
-        "resolveXp": 13,
-        "weaponRank": 3,
-        "armourRank": 3,
-        "stress": 0,
-        "hp": 1,
-        "skills": [
-          "transform",
-          "manacles",
-          "vomit",
-          "absolution",
-          "rake",
-          "rage",
-          "slam"
-        ],
-        "trinkets": [],
-        "quirks": [
-          "calm",
-          "flawed_release",
-          "hatred_of_man",
-          "nervous",
-          "quickdraw",
-          "ruminator",
-          "skilled_gambler"
-        ],
-        "diseases": []
-      },
-      {
-        "id": 23,
-        "name": "韦斯利",
-        "heroClass": "bounty_hunter",
-        "resolveLevel": 3,
-        "resolveXp": 23,
-        "weaponRank": 3,
-        "armourRank": 3,
-        "stress": 90,
-        "hp": 36,
-        "skills": [
-          "collect_bounty",
-          "come_hither",
-          "finish_him",
-          "flashbang"
-        ],
-        "trinkets": [],
-        "quirks": [
-          "clotter",
-          "curious",
-          "hatred_of_eldritch",
-          "night_owl",
-          "quickdraw",
-          "thin_blooded",
-          "witness",
-          "thanatophobia",
-          "lygophobia",
-          "eagle_eye",
-          "the_fits"
-        ],
-        "diseases": []
-      },
-      {
-        "id": 24,
         "name": "奥莱巴",
         "heroClass": "highwayman",
-        "resolveLevel": 3,
-        "resolveXp": 21,
+        "resolveLevel": 4,
+        "resolveXp": 33,
         "weaponRank": 3,
         "armourRank": 3,
         "stress": 0,
-        "hp": 1,
+        "hp": 38,
         "skills": [
           "pistol_shot",
-          "grape_shot_blast",
-          "take_aim",
-          "opened_vein"
+          "point_blank_shot",
+          "duelist_advance",
+          "take_aim"
         ],
         "trinkets": [],
         "quirks": [
           "curious",
           "lazy_eye",
-          "ruins_explorer",
-          "second_wind",
           "sitiomania",
-          "stress_eater",
+          "resolution",
+          "robust",
+          "ruins_explorer",
+          "satanophobia",
+          "second_wind",
           "warren_adventurer"
         ],
         "diseases": []
       },
       {
-        "id": 25,
+        "id": 23,
         "name": "博伊文",
         "heroClass": "antiquarian",
         "resolveLevel": 4,
-        "resolveXp": 25,
+        "resolveXp": 31,
         "weaponRank": 3,
         "armourRank": 3,
-        "stress": 24,
-        "hp": 26,
+        "stress": 3,
+        "hp": 24.7,
         "skills": [
           "fortifying_vapours",
           "invigorating_vapours",
           "festering_vapours",
           "protect_me"
         ],
-        "trinkets": [
-          "0",
-          "1"
-        ],
+        "trinkets": [],
         "quirks": [
           "dacnomania",
           "night_owl",
           "off_guard",
-          "slayer_of_beast",
           "weald_adventurer",
           "winded",
-          "hatred_of_unholy",
-          "clumsy",
-          "warren_scrounger",
-          "calm"
+          "calm",
+          "warren_tactician",
+          "meditator",
+          "soft",
+          "quickdraw"
         ],
         "diseases": []
       },
       {
-        "id": 26,
+        "id": 24,
         "name": "梅切尔",
         "heroClass": "antiquarian",
-        "resolveLevel": 3,
-        "resolveXp": 23,
+        "resolveLevel": 4,
+        "resolveXp": 29,
         "weaponRank": 3,
         "armourRank": 3,
-        "stress": 84,
-        "hp": 26,
+        "stress": 0,
+        "hp": 28.6,
         "skills": [
-          "festering_vapours",
           "invigorating_vapours",
-          "protect_me",
-          "flashpowder"
+          "flashpowder",
+          "kris_stab",
+          "fortifying_vapours"
         ],
         "trinkets": [],
         "quirks": [
           "warren_explorer",
           "second_wind",
           "sitiomania",
-          "phengophobia",
-          "slayer_of_eldritch",
-          "irrepressible",
           "fear_of_unholy",
-          "dud_hitter"
+          "dud_hitter",
+          "enlightened",
+          "early_riser",
+          "hysterical_blindness",
+          "tough",
+          "the_worries",
+          "stress_eater",
+          "precision_striker",
+          "stomach_cramp"
         ],
         "diseases": []
       },
       {
-        "id": 27,
+        "id": 25,
         "name": "墨布雷",
         "heroClass": "bounty_hunter",
-        "resolveLevel": 3,
-        "resolveXp": 21,
+        "resolveLevel": 4,
+        "resolveXp": 27,
         "weaponRank": 3,
         "armourRank": 3,
-        "stress": 2,
+        "stress": 0,
         "hp": 36,
         "skills": [
           "collect_bounty",
@@ -1092,79 +1026,158 @@
           "finish_him",
           "hook_and_slice"
         ],
-        "trinkets": [
-          "0",
-          "1"
+        "trinkets": [],
+        "quirks": [
+          "love_interest",
+          "back_tracker",
+          "bad_gambler",
+          "claustrophobia",
+          "hieromania",
+          "resilient",
+          "second_wind",
+          "slayer_of_beast",
+          "the_runs",
+          "cove_adventurer",
+          "nervous"
         ],
+        "diseases": []
+      },
+      {
+        "id": 26,
+        "name": "特里",
+        "heroClass": "grave_robber",
+        "resolveLevel": 3,
+        "resolveXp": 23,
+        "weaponRank": 3,
+        "armourRank": 3,
+        "stress": 0,
+        "hp": 28.8,
+        "skills": [
+          "shadow_fade",
+          "thrown_dagger",
+          "poison_dart",
+          "pick"
+        ],
+        "trinkets": [],
         "quirks": [
           "slayer_of_unholy",
-          "love_interest",
-          "bad_gambler",
+          "thanatophobia",
+          "weald_scrounger",
+          "stress_faster",
+          "suicidal",
+          "necromania",
           "slayer_of_beast",
-          "resilient",
-          "hieromania",
-          "diurnal"
+          "the_ague"
+        ],
+        "diseases": []
+      },
+      {
+        "id": 27,
+        "name": "古尔奈",
+        "heroClass": "grave_robber",
+        "resolveLevel": 3,
+        "resolveXp": 23,
+        "weaponRank": 3,
+        "armourRank": 3,
+        "stress": 0,
+        "hp": 32,
+        "skills": [
+          "flashing_daggers",
+          "shadow_fade",
+          "thrown_dagger",
+          "pick"
+        ],
+        "trinkets": [],
+        "quirks": [
+          "ruins_scrounger",
+          "thin_blooded",
+          "resolution",
+          "skilled_gambler",
+          "slayer_of_eldritch",
+          "gambler",
+          "nocturnal",
+          "unquiet_mind",
+          "clotter"
         ],
         "diseases": []
       },
       {
         "id": 28,
-        "name": "乌理",
-        "heroClass": "vestal",
-        "resolveLevel": 2,
-        "resolveXp": 13,
+        "name": "马雷特",
+        "heroClass": "antiquarian",
+        "resolveLevel": 3,
+        "resolveXp": 17,
         "weaponRank": 3,
         "armourRank": 3,
-        "stress": 67,
-        "hp": 32,
+        "stress": 0,
+        "hp": 18.2,
         "skills": [
-          "mace_bash",
-          "dazzling_light",
-          "divine_grace",
-          "gods_hand"
+          "kris_stab",
+          "invigorating_vapours",
+          "flashpowder",
+          "fortifying_vapours"
         ],
-        "trinkets": [
-          "0",
-          "1"
-        ],
+        "trinkets": [],
         "quirks": [
-          "fated",
-          "unyielding",
-          "nervous",
-          "mercurial",
-          "meditator",
-          "resilient",
-          "winded",
-          "egomania"
+          "cove_tactician",
+          "egomania",
+          "off_guard",
+          "photomania",
+          "lurker",
+          "automatonophobia",
+          "ruins_scrounger",
+          "bad_humours",
+          "the_black_plague",
+          "unquiet_mind",
+          "thick_blooded",
+          "hemophilia"
         ],
         "diseases": []
       },
       {
         "id": 29,
-        "name": "马特尔",
-        "heroClass": "crusader",
-        "resolveLevel": 2,
-        "resolveXp": 13,
-        "weaponRank": 3,
-        "armourRank": 3,
+        "name": "里维埃",
+        "heroClass": "antiquarian",
+        "resolveLevel": 0,
+        "resolveXp": 0,
+        "weaponRank": 0,
+        "armourRank": 0,
         "stress": 0,
-        "hp": 54,
+        "hp": 17,
         "skills": [
-          "smite",
-          "zealous_accusation",
-          "holy_lance",
-          "inspiring_cry"
+          "cower",
+          "flashpowder",
+          "invigorating_vapours",
+          "protect_me"
         ],
         "trinkets": [],
         "quirks": [
-          "warren_tactician",
-          "ruins_scrounger",
-          "satanophobia",
-          "anemic",
-          "hard_noggin",
-          "slayer_of_man",
-          "automatonophobia",
-          "nervous"
+          "hard_skinned",
+          "hagiomania"
+        ],
+        "diseases": []
+      },
+      {
+        "id": 30,
+        "name": "柔",
+        "heroClass": "antiquarian",
+        "resolveLevel": 0,
+        "resolveXp": 0,
+        "weaponRank": 0,
+        "armourRank": 0,
+        "stress": 0,
+        "hp": 17,
+        "skills": [
+          "kris_stab",
+          "fortifying_vapours",
+          "invigorating_vapours",
+          "protect_me"
+        ],
+        "trinkets": [],
+        "quirks": [
+          "clutch_hitter",
+          "cove_scrounger",
+          "faithless"
         ],
         "diseases": []
       }
