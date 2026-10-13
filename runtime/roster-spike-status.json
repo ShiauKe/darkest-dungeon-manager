@@ -5,8 +5,8 @@
     "ref": "master",
     "mode": "temporary-spike"
   },
-  "observedAt": "2026-10-09T15:51:46.281Z",
-  "stage": "decode",
-  "state": "DECODED",
-  "detail": "real persist.roster.json converted to JSON"
+  "observedAt": "2026-10-13T14:35:04.601Z",
+  "stage": "projection",
+  "state": "READY",
+  "detail": "local roster projection updated"
 }
